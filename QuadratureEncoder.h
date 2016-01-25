@@ -1,0 +1,5 @@
+#ifndef QUADRATUREENCODER_H
+#define QUADRATUREENCODER_H
+
+
+#endif
