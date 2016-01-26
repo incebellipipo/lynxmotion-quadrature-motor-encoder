@@ -22,8 +22,8 @@ public:
 
         void initialize();
         void attach(int green,int yellow);
-        inline void handleInterruptGreen();
-        inline void handleInterruptYellow();
+        void handleInterruptGreen();
+        void handleInterruptYellow();
 
         inline int parseEncoder();
 
