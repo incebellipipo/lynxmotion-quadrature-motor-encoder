@@ -36,7 +36,7 @@ void Encoder::initialize(){
 }
 
 
-inline void Encoder::handleInterruptGreen(){
+void Encoder::handleInterruptGreen(){
 	_greenSet = digitalRead(greenCablePin);
 	_yellowSet = digitalRead(yellowCablePin);
 	encoderTicks += parseEncoder();
@@ -45,7 +45,7 @@ inline void Encoder::handleInterruptGreen(){
 }
 
 
-inline void Encoder::handleInterruptYellow(){
+void Encoder::handleInterruptYellow(){
 	_yellowSet = digitalRead(yellowCablePin);
 	_greenSet = digitalRead(greenCablePin);
 	encoderTicks += parseEncoder();
