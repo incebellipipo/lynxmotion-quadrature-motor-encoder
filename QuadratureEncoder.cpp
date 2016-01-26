@@ -11,18 +11,20 @@ Encoder::Encoder(WheelFace a){
 
 }
 
+Encoder::Encoder(WheelFace a,int green,int yellow){
+  faceOfWheel = a;
+  greenCablePin = green;
+  yellowCablePin = yellow;
+
+}
+
+
 void Encoder::attach(int green,int yellow){
   greenCablePin = green;
   yellowCablePin = yellow;
 
 }
 
-void Encoder::attach(WheelFace a,int green,int yellow){
-  faceOfWheel = a;
-  greenCablePin = green;
-  yellowCablePin = yellow;
-
-}
 
 void Encoder::initialize(){
   encoderTicks = 0;
